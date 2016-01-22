@@ -2,8 +2,8 @@ class LaunchdOneshot < Formula
   desc "Add a oneshot launchd jobs"
   homepage "https://github.com/cybertk/launchd-oneshot"
   url "https://github.com/cybertk/launchd-oneshot.git",
-    :tag => "v0.0.4",
-    :revision => "d683d0856eb760ad30a7f9410a94b6e39a2b83d6"
+    :tag => "v0.1.0",
+    :revision => "2eb4d8f12ca19938f3aa8b329e6dc48121f8d0f5"
 
   head "https://github.com/cybertk/launchd-oneshot.git"
 
@@ -14,6 +14,6 @@ class LaunchdOneshot < Formula
   end
 
   test do
-    assert_match /Usage/, shell_output("launchd-oneshot tests/job.sh")
+    assert_match /Usage/, shell_output("launchd-oneshot")
   end
 end
